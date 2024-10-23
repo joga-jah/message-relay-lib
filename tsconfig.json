@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "rootDir": "./",
+    "outDir": "./dist",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@libs": [
+        "src/libs"
+      ],
+      "@libs/*": [
+        "src/libs/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "**/*.{js,ts,css}"
+  ],
+  "exclude": [
+    ".vscode",
+    "dist"
+  ],
+  "ts-node": {
+    "transpileOnly": true
+  }
+}
