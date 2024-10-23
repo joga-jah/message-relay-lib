@@ -1,8 +1,11 @@
 {
   "name": "message-relay-lib",
   "version": "1.0.0",
-  "description": "",
+  "description": "Utilities to message relay lib: HTTP, Parameters, Middlewares",
   "main": "index.ts",
+  "repository": {
+    "url": "https://github.com/joga-jah/message-relay-lib"
+  },
   "scripts": {
     "lint": "eslint . --ext .ts src/*",
     "prettier-format": "prettier --config .prettierrc ./src/**/*.ts --write"
