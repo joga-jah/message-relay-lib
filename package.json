@@ -4,7 +4,7 @@
   "description": "Utilities to message relay lib: HTTP, Parameters, Middlewares",
   "main": "index.ts",
   "repository": {
-    "url": "https://github.com/joga-jah/message-relay-lib"
+    "url": "git+https://github.com/joga-jah/message-relay-lib.git"
   },
   "scripts": {
     "lint": "eslint . --ext .ts src/*",
