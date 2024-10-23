@@ -1,0 +1,30 @@
+name: Publish
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+
+  publish-npm:
+    name: Publishing to npm
+    environment: production
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 21
+          registry-url: https://registry.npmjs.org/
+      - run: npm ci
+      - name: "Automated Version Bump"
+        uses: "phips28/gh-action-bump-version@master"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          target-branch: "main"
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
