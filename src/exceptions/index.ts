@@ -4,8 +4,10 @@ import ApiClientUnavailableError from './ApiClientUnavailableError'
 import NotFoundError from './NotFoundError'
 import ServiceUnavailableError from './ServiceUnavailableError'
 import UnauthorizedError from './UnauthorizedError'
+import BaseError from './BaseError'
 
 export {
+  BaseError,
   BadRequestError,
   ApiClientUnavailableError,
   NotFoundError,

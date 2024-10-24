@@ -6,6 +6,6 @@ const loggerOptions = {
   transports: [new transports.Console()]
 }
 
-export { default as loggerMiddleware } from './logger-middleware'
+export { default as LoggerMiddleware } from './logger-middleware'
 export { Logger } from 'winston'
 export default createLogger(loggerOptions)

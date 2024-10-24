@@ -1,6 +1,6 @@
 {
   "name": "message-relay-lib",
-  "version": "1.0.0",
+  "version": "1.0.10",
   "description": "Utilities to message relay lib: HTTP, Parameters, Middlewares",
   "main": "index.ts",
   "repository": {
